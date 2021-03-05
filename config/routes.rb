@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
-  get 'books/new'
-  get 'books/index'
-  get 'books/edit'
-  get 'books/show'
-  get 'homes/top'
+  # => homes controller
+  get 'homes/top', as: 'top'
+
+  # => books controller
+  resources :books
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
