@@ -17,18 +17,27 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
 }
 
 a {
   text-decoration: none;
 }
 
-.h1 {
-  width: 90%;
-  margin: 30px 0;
-  position: relative;
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
 }
 
 .title {
-  font-size: 32px;
+  font-size: 26px;
+}
+
+.text {
+  font-size: 13px;
 }
