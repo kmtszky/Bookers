@@ -13,34 +13,31 @@
  *= require_tree .
  *= require_self
  */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+
+/* common */
+body {
   color: #333;
   font-family: verdana, arial, helvetica, sans-serif;
-  line-height: 18px;
-}
-
-body {
   font-size: 13px;
+  line-height: 18px;
   margin: 33px;
 }
 
+p {
+  margin: 33px;
+}
+
+h1 {
+  font-size: 26px;
+}
+
+/* url-link */
 a {
   color: black;
 }
 
 a:visited {
   color: #696969;
-}
-
-.h1 {
-  font-size: 26px;
-}
-
-.text {
-  font-size: 13px;
 }
 
 .pointer :hover{

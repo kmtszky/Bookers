@@ -2,40 +2,46 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-// common
-p {
-  margin: 33px;
-}
+// 共通事項
+  // notice
+  .notice {
+    color: green;
+  }
 
-h1 {
-  margin-bottom: 16px;
-}
+  // submit-bottun
+  input {
+    padding: 1px 2px;
+  }
 
-.notice {
-  color: green;
-}
+// #index => 本一覧
+  h1 {
+    margin-bottom: 16px;
+  }
 
-// index > 一覧
+  // table
+  th {
+    padding-bottom: 5px;
+  }
 
-// index > 新規投稿
-h2 {
-  margin: 16px 0;
-}
+  td {
+    padding: 7px 5px 0;
+  }
 
-label {
-  display: block;
-}
+// #index => 新規投稿
+  h2 {
+    margin: 16px 0;
+  }
 
-.new-form {
-  margin-bottom: 10px;
-}
+  label {
+    display: block;
+  }
 
-// show, edit > nav
-nav {
-  list-style: none;
-  margin-top: 10px;
-}
+  .input-form {
+    margin-bottom: 10px;
+  }
 
-li {
-  display: inline-block;
-}
+// #show => 下部menu
+  .navigation {
+    display: inline-block;
+    margin-top: 10px;
+  }
