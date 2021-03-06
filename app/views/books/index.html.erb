@@ -1,5 +1,6 @@
 <h1><strong>Books</strong></h1>
 
+<!--本の一覧-->
 <table>
   <tr>
     <th>Title</th>
@@ -15,13 +16,20 @@
   </tr>
 </table>
 
+<!--新規投稿-->
 <div class="new">
   <h2>New book</h2>
-  <div class="title box">
-    <p>Title</p>
-  </div>
-  <div class="body box">
-    <p>Body</p>
-  </div>
-  <a href="#">Submit</a>
+
+  <%= form_with model:@book, local:true do |f| %>
+    <div class="box">
+      <p>Title</p>
+      <%= f.text_field :title %>
+    </div>
+    <div class="box">
+      <p>Body</p>
+      <%= f.text_area :body %>
+    </div>
+  <%= f.submit 'Create Book' %>
+
+  <% end %>
 </div>
