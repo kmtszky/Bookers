@@ -11,16 +11,30 @@ h1 {
   margin-bottom: 16px;
 }
 
-// index
-.new-form {
-  margin-bottom: 10px;
+.notice {
+  color: green;
+}
+
+// index > 一覧
+.pointer :hover{
+  color: white;
+  background-color: black;
+}
+
+// index > 新規投稿
+h2 {
+  margin: 16px 0;
 }
 
 label {
   display: block;
 }
 
-// nav
+.new-form {
+  margin-bottom: 10px;
+}
+
+// show, edit > nav
 nav {
   list-style: none;
   margin-top: 10px;
@@ -28,9 +42,4 @@ nav {
 
 li {
   display: inline-block;
-}
-
-// show
-.notice {
-  color: green;
 }
