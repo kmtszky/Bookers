@@ -13,10 +13,10 @@ class BooksController < ApplicationController
   def edit
     @book = Book.find(params[:id])
   end
-  
+
   def update
     book = Book.find(params[:id])
-    book.update(blog_params)
+    book.update(book_params)
     redirect_to book_path(book.id)
   end
 
