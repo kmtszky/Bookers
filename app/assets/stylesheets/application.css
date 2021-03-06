@@ -42,3 +42,8 @@ a:visited {
 .text {
   font-size: 13px;
 }
+
+.pointer :hover{
+  color: white;
+  background-color: black;
+}
