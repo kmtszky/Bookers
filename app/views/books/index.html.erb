@@ -30,12 +30,12 @@
 
   <%= form_with model:@book, local:true do |f| %>
   <%= render 'books/errors', model: f.object %>
-    <div class="input-form">
-      <label for="book-title">Title</label>
+    <div class="field">
+      <%= f.label :title, 'Title' %>
       <%= f.text_field :title %>
     </div>
-    <div class="input-form">
-      <label for="book-body">Body</label>
+    <div class="field">
+      <%= f.label :body, 'Body' %>
       <%= f.text_area :body %>
     </div>
     <%= f.submit ' Create Book ' %>
