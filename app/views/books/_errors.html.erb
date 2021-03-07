@@ -1,9 +1,14 @@
 <% if model.errors.any? %>
-  <div class="error-alert">
-    <h2></h2>
+  <div id="error-alert">
+    <% if model.errors.count == 1 %>
+      <h2><%= model.errors.count %> error prohibited this book from being saved:</h2>
+    <% else %>
+      <h2><%= model.errors.count %> errors prohibited this book from being saved:</h2>
+    <% end %>
+
     <ul>
       <!--複数のメッセージをすべて表示するためeachメソッドを使用。errors.full_messageですべてのエラーメッセージを配列で取得する-->
-      <% model.errors.full_massages.each do |message| %>
+      <% model.errors.full_messages.each do |message| %>
         <li><%= message %></li>
       <% end %>
     </ul>
