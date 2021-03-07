@@ -2,11 +2,11 @@
 
 <%= form_with model:@book, local:true do |f|%>
   <div class="input-form">
-    <label for="book-title">Title</label>
+    <%= f.label :title, 'Title' %>
     <%= f.text_field :title %>
   </div>
   <div class="input-form">
-    <label for="book-body">Body</label>
+    <%= f.label :body, 'Body' %>
     <%= f.text_area :body %>
   </div>
   <%= f.submit ' Update Book ' %>
