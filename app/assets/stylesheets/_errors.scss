@@ -1,9 +1,18 @@
-.error-alert {
+#error-alert {
   width: 450px;
   border: 2px solid red;
   padding: 7px 7px 0 7px;
   margin-bottom: 20px;
   background-color: #f0f0f0;
+}
+
+#error-alert h2{
+  font-size: 12px;
+  padding: 5px 5px 5px 15px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: white;
 }
 
 .form_with_errors {
