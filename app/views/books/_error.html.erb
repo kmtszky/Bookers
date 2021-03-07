@@ -1,6 +1,8 @@
 <% if model.errors.any? %>
   <diV class="error-alert">
+    <h2></h2>
     <ul>
+      <!--複数のメッセージをすべて表示するためeachメソッドを使用。errors.full_messageですべてのエラーメッセージを配列で取得する-->
       <% model.errors.full_massages.each do |message| %>
         <li><%= message %></li>
       <% end %>
