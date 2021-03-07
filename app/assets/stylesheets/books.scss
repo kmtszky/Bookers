@@ -2,15 +2,16 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-// submit-bottun
-  input {
-    padding: 1px 2px;
-  }
+// 複数ページ共通事項
+  // Success messaage
+    #notice {
+      color: green;
+    }
 
-// notice - success messaage
-  .notice {
-    color: green;
-  }
+  // Create / Update ボタン
+    input {
+      padding: 1px 2px;
+    }
 
 // #index
   h1, h2 {

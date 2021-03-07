@@ -9,7 +9,7 @@ class BooksController < ApplicationController
     if book.save
       redirect_to book_path(book.id), notice: 'Book was successfully created.'
     else
-      @books = Book.all # create actionでは@booksを取得していないため、render:indexするまえに情報を取得する
+      @books = Book.all # renderはmodelを経由しないため事前に本の情報を取得する
       render "index"
     end
   end
