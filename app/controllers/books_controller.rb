@@ -7,9 +7,10 @@ class BooksController < ApplicationController
   def create
     book = Book.new(book_params)
     if book.save
-      redirect_to book_path(book.id)
+      redirect_to book_path(book.id), notice: 'Book was successfully created.'
     else
-      render :index
+      @books = Book.all # create actionでは@booksを取得していないため、render:indexするまえに情報を取得する
+      render "index"
     end
   end
 
@@ -19,8 +20,12 @@ class BooksController < ApplicationController
 
   def update
     book = Book.find(params[:id])
-    book.update(book_params)
-    redirect_to book_path(book.id)
+    if book.update(book_params)
+      redirect_to book_path(book.id), notice: 'Book was successfully updated.'
+    else
+      @book = Book.find(params[:id])
+      render "edit"
+    end
   end
 
   def show
@@ -29,8 +34,11 @@ class BooksController < ApplicationController
 
   def destroy
     book = Book.find(params[:id])
-    book.destroy
-    redirect_to books_path
+    if book.destroy
+      redirect_to books_path, notice: 'Book was successfully destroyed.'
+    else
+
+    end
   end
 
   private
