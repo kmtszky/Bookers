@@ -1,11 +1,12 @@
 <h1>Editing Book</h1>
 
-<%= form_with model:@book, local:true do |f|%>
-  <div class="input-form">
+<%= form_with model:@book, local:true do |f| %>
+<%= render 'books/errors', model: f.object %>
+  <div class="field">
     <%= f.label :title, 'Title' %>
     <%= f.text_field :title %>
   </div>
-  <div class="input-form">
+  <div class="field">
     <%= f.label :body, 'Body' %>
     <%= f.text_area :body %>
   </div>
