@@ -1,0 +1,9 @@
+<% if model.errors.any? %>
+  <diV class="error-alert">
+    <ul>
+      <% model.errors.full_massages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  </diV>
+<% end %>
